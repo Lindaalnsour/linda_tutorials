@@ -170,6 +170,19 @@ newlist = [x for x in fruits if "a" in x]
 print(newlist)
 
 
+newlist = [x for x in fruits if x != "apple"]
+
+newlist = [x for x in fruits]
+
+newlist = [x for x in range(10)]
+
+newlist = [x.upper() for x in fruits]
+
+newlist = ['hello' for x in fruits]
+
+newlist = [x if x != "banana" else "orange" for x in fruits]
+
+
 # Sort lists:
 #Sort the list based on how close the number is to 50:
 def myfunc(n):
@@ -207,18 +220,3 @@ print(thislist)
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.reverse()
 print(thislist)
-
-
-
-newlist = [x for x in fruits if x != "apple"]
-
-
-newlist = [x for x in fruits]
-
-newlist = [x for x in range(10)]
-
-newlist = [x.upper() for x in fruits]
-
-newlist = ['hello' for x in fruits]
-
-newlist = [x if x != "banana" else "orange" for x in fruits]
