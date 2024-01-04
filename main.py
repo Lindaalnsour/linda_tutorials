@@ -220,3 +220,84 @@ print(thislist)
 thislist = ["banana", "Orange", "Kiwi", "cherry"]
 thislist.reverse()
 print(thislist)
+
+# 2 ways to copy the lists:
+# new list = <previous list>.copy()
+#new list=list(<previous list>)
+thislist = ["apple", "banana", "cherry"]
+mylist = thislist.copy()
+print(mylist)
+thislist = ["apple", "banana", "cherry"]
+mylist = list(thislist)
+print(mylist)
+
+# List Methods
+#
+# Python has a set of built-in methods that you can use on lists.
+# Method 	Description
+# append()	Adds an element at the end of the list
+# clear()	Removes all the elements from the list
+# copy()	Returns a copy of the list
+# count()	Returns the number of elements with the specified value
+# extend()	Add the elements of a list (or any iterable), to the end of the current list
+# index()	Returns the index of the first element with the specified value
+# insert()	Adds an element at the specified position
+# pop()	Removes the element at the specified position
+# remove()	Removes the item with the specified value
+# reverse()	Reverses the order of the list
+# sort()	Sorts the list
+
+# all about tuples
+linda_tuple = ("bio", "programming", "study", "love", "pry", "good")
+print (linda_tuple)
+print (type(linda_tuple))
+
+
+#try something!!
+thistuple = tuple(["apple", "banana", "cherry"]) # note the double round-brackets
+print(thistuple)
+
+print (linda_tuple[1],linda_tuple[-1],linda_tuple[0:2],linda_tuple[:2],linda_tuple[3:])
+if "bio" in linda_tuple:
+    print ("yes 'bio' in the tuple")
+#print ('yes,'bio' in the tuple')
+#print ('yes,'bio' in the tuple')
+          # ^^^^^^^^^
+#SyntaxError: invalid syntax. Perhaps you forgot a comma?
+lindalist = list(linda_tuple)
+lindalist.remove("bio")
+lindalist[1] = "linda"
+lindalist.append ("career")
+linda_tuple= tuple(lindalist)
+print(linda_tuple)
+
+#2 ways to add tuples :
+linda_tuple += thistuple
+print(linda_tuple)
+
+sumtuple = linda_tuple + thistuple
+print(sumtuple)
+
+(home, *land, earth) = linda_tuple
+
+print(home, land, earth)
+
+for i in range(len(linda_tuple)):
+  print(linda_tuple[i])
+
+for x in linda_tuple:
+  print(x)
+
+  i = 0
+  while i < len(linda_tuple):
+      print(linda_tuple[i])
+      i = i + 1
+
+linda_tuple = linda_tuple * 2
+print(linda_tuple)
+
+L = linda_tuple.count("linda")
+A = linda_tuple.index("programming")
+print(L , A)
+
+
